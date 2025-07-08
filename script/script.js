@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
         existingPlayersInfo.push({ name: userName.value, score: 0 });
         saveInfoToLocalStorage(existingPlayersInfo);
       }
-      window.location.href = "./GamePage.html";
+      window.location.href = "free-falling-emoji/GamePage.html";
     })
     }else{
       alertMessage.innerHTML='Name must be contain more than 2 characters';
@@ -49,7 +49,7 @@ window.addEventListener("load", function () {
   scoreBoardButton.addEventListener("click",function(){
     clickSound.play();
     clickSound.addEventListener("ended",function(){
-      window.location.href = "./boardpage.html";
+      window.location.href = "free-falling-emoji/boardpage.html";
 
     console.log("sucess");
    })    

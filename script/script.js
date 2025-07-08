@@ -11,8 +11,7 @@ window.addEventListener("load", function () {
     userName.value=localStorage.getItem('Player-Name');
   }
   userName.addEventListener("input", function () {
-   
-
+    
     changeOpacity(userName, startButton);
   });
 
@@ -37,7 +36,7 @@ window.addEventListener("load", function () {
         existingPlayersInfo.push({ name: userName.value, score: 0 });
         saveInfoToLocalStorage(existingPlayersInfo);
       }
-      window.location.href = "free-falling-emoji/GamePage.html";
+      window.location.href = "./GamePage.html";
     })
     }else{
       alertMessage.innerHTML='Name must be contain more than 2 characters';
@@ -49,9 +48,9 @@ window.addEventListener("load", function () {
   scoreBoardButton.addEventListener("click",function(){
     clickSound.play();
     clickSound.addEventListener("ended",function(){
-      window.location.href = "free-falling-emoji/boardpage.html";
+      window.location.href = "./boardpage.html";
 
-    console.log("sucess");
+    console.log("success");
    })    
   })   
 
